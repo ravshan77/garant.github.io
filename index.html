@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="copyright" content="MACode ID, https://macodeid.com/">
+
+  <title>SeoGram - SEO Agency Template</title>
+
+  <link rel="stylesheet" href="../assets/css/maicons.css">
+
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+  <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+
+  <link rel="stylesheet" href="../assets/css/theme.css">
+
+  <!-- Leaflet.js CSS faylini qo'shing -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Leaflet.js JavaScript faylini qo'shing -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <style>
+    #map {
+      height: 500px; /* Xaritaning balandligini belgilash */
+      width: 100%; /* Xaritaning kengligini belgilash */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500">
+      <div class="container">
+        <a href="#" class="navbar-brand">Garant.<span class="text-primary">uz</span></a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Bosh sahifa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Biz haqimizda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Xizmatlarimiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Yangiliklar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Aloqa</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary ml-lg-2" href="tel:+998 55-802-55-50">Call center</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="page-banner home-banner">
+        <div class="row align-items-center flex-wrap-reverse h-100">
+          <div class="col-md-6 py-5 wow fadeInLeft">
+            <h1 class="mb-4">Mahsulotlarni xarid qilish uchun ishonchli hamkoringiz!</h1>
+            <p class="text-lg text-grey mb-5">Garant Savdo Markazi mijozlarga mahsulotlarni qulay shartlarda kridit asosida xarid qilish uchun keng turdagi xizmatlarni taklif etadi. Bizning xizmatlarimiz mijozlar ehtiyojlarini hisobga olgan holda ishlab chiqilgan.</p>
+            <a href="https://t.me/garantsavdo_chat" class="btn btn-primary btn-split"> Xarid qilish <div class="fab"><span class="mai-play"></span></div></a>
+          </div>
+          <div class="col-md-6 py-5 wow zoomIn">
+            <div class="img-fluid text-center">
+              <img src="../assets/img/logo_login.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <a href="#about" class="btn-scroll" data-role="smoothscroll"><span class="mai-arrow-down"></span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Ijtimoiy Tarmoqlarimiz bo'limi -->
+<div class="page-section social-section bg-primary text-white py-5" style="background-image: url(../assets/img/bg_pattern.svg);">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="title-section mb-4 wow fadeInUp text-white">Bizning Ijtimoiy Sahifalarimiz</h2>
+        <p class="mb-5">Biz bilan bog'lanish va yangiliklardan xabardor bo'lish uchun quyidagi ijtimoiy sahifalarimizga qo'shiling:</p>
+        <div class="social-icons d-flex justify-content-center">
+          <!-- Instagarm Icon -->
+          <a href="https://www.instagram.com/garant_savdo_markazi/" target="_blank" class="social-icon mx-3 wow fadeIn" data-wow-delay="0.2s">
+            <svg fill="#fff" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="XMLID_504_"> <path id="XMLID_505_" d="M38.52,0.012h222.978C282.682,0.012,300,17.336,300,38.52v222.978c0,21.178-17.318,38.49-38.502,38.49 H38.52c-21.184,0-38.52-17.313-38.52-38.49V38.52C0,17.336,17.336,0.012,38.52,0.012z M218.546,33.329 c-7.438,0-13.505,6.091-13.505,13.525v32.314c0,7.437,6.067,13.514,13.505,13.514h33.903c7.426,0,13.506-6.077,13.506-13.514 V46.854c0-7.434-6.08-13.525-13.506-13.525H218.546z M266.084,126.868h-26.396c2.503,8.175,3.86,16.796,3.86,25.759 c0,49.882-41.766,90.34-93.266,90.34c-51.487,0-93.254-40.458-93.254-90.34c0-8.963,1.37-17.584,3.861-25.759H33.35v126.732 c0,6.563,5.359,11.902,11.916,11.902h208.907c6.563,0,11.911-5.339,11.911-11.902V126.868z M150.283,90.978 c-33.26,0-60.24,26.128-60.24,58.388c0,32.227,26.98,58.375,60.24,58.375c33.278,0,60.259-26.148,60.259-58.375 C210.542,117.105,183.561,90.978,150.283,90.978z"></path> </g> </g></svg>
+          </a>
+          <!-- YouTube Icon -->
+          <a href="https://www.youtube.com/@garantsavdo5234" target="_blank" class="social-icon mx-3 wow fadeIn" data-wow-delay="0.6s">
+            <svg fill="#fff" height="45px" width="45px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="XMLID_822_"> <path id="XMLID_823_" d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938 C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527 C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991 c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764 c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861 C204.394,157.263,202.325,160.684,199.021,162.41z"></path> </g> </g></svg>
+          </a>
+          <!-- Email Icon -->
+          <a href="mailto:info@garantsavdomarkazi.uz" target="_blank" class="social-icon mx-3 wow fadeIn" data-wow-delay="0.8s">
+            <svg width="40" height="40" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M20 4H4C2.895 4 2 4.895 2 6V18C2 19.105 2.895 20 4 20H20C21.105 20 22 19.105 22 18V6C22 4.895 21.105 4 20 4ZM20 6L12 11L4 6H20ZM4 18V8L12 13L20 8V18H4Z" />
+            </svg>
+          </a>
+          <!-- Telegram Icon -->
+          <a href="https://t.me/garantsavdo_chat" target="_blank" class="social-icon mx-3 wow fadeIn" data-wow-delay="1.0s">
+            <svg width="40px" height="40px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.5 1.5L0.5 6.5L4.5 8.5L10.5 4.5L6.5 9.5L12.5 13.5L14.5 1.5Z" stroke="#fff" stroke-linejoin="round"></path> </g></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Blog -->
+    <div class="page-section">
+      <div class="container">
+        <div class="text-center wow fadeInUp">
+          <div class="subhead"> Yangiliklar </div>
+          <h2 class="title-section">Eng so'nggi yangiliklarni va aksiyalardan xabardor bo'ling</h2>
+          <div class="divider mx-auto"></div>
+        </div>
+  
+        <div class="row mt-5">
+          <div class="col-lg-4 py-3 wow fadeInUp">
+            <div class="card-blog">
+              <div class="header">
+                <div class="post-thumb">
+                  <img src="../assets/img/aktsiya/kondetsaner.jfif" alt="">
+                </div>
+              </div>
+              <div class="body">
+                <h6 class="post-title"><a href="#">Yozgi aksiyalar</a></h6>
+                <h5 class="post-title"><a href="#">Kondetsanerlar uchun yozgi 5% chegirma</a></h5>
+                <div class="post-date">eʼlon qilingan <a href="#">28 Iyn 2024</a></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 py-3 wow fadeInUp">
+            <div class="card-blog">
+              <div class="header">
+                <div class="post-thumb">
+                  <img src="../assets/img/aktsiya/shkaf_1.jpg" alt="">
+                </div>
+              </div>
+              <div class="body">
+                <h6 class="post-title"><a href="#">Garantdan haftalik</a></h6>
+                <h5 class="post-title"><a href="#">Nordic-3 mebelini 5% chegirmada xarid qiling</a></h5>
+                <div class="post-date">eʼlon qilingan <a href="#">13 Iyl 2024</a></div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 py-3 wow fadeInUp">
+            <div class="card-blog">
+              <div class="header">
+                <div class="post-thumb">
+                  <img src="../assets/img/aktsiya/gazplita.jpg" alt="">
+                </div>
+              </div>
+              <div class="body">
+                <h6 class="post-title"><a href="#">Proma kod🤫: 1G98R7</a></h6>
+                <h5 class="post-title"><a href="#">Gaz plitasini proma kod orqali xarid qiling va bonus oling</a></h5>
+                <div class="post-date">eʼlon qilingan <a href="#">09 Aug 2024</a></div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-12 mt-4 text-center wow fadeInUp">
+            <a href="https://www.instagram.com/garant_savdo_markazi/" target="_blank" class="btn btn-primary">Ko'proq</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Vakansiya bo'limi -->
+<div class="page-section">
+  <div class="container">
+    <div class="text-center wow fadeInUp">
+      <div class="subhead">Vakansiya va Bo'sh Ish O'rinlari</div>
+      <h2 class="title-section">Garant Savdo Markazi jamoamizga yangi iste'dodlarni qidirmoqda!</h2>
+      <div class="divider mx-auto"></div>
+      <p class="text-grey">Bizda turli lavozimlar bo'yicha bo'sh ish o'rinlari mavjud. Sizga mos lavozimni toping va bizning jamoamizga qo'shiling!</p>
+    </div>
+
+    <div class="row mt-5">
+      <!-- Har bir bo'sh ish o'rni uchun kartochka -->
+      <div class="col-lg-4 py-3 wow zoomIn">
+        <div class="card-pricing">
+          <div class="header">
+            <div class="pricing-type">Sotuv Menejeri</div>
+          </div>
+          <div class="body">
+            <p><strong>Ish joyi:</strong> Toshkent, Yunusobod</p>
+            <p><strong>Maosh:</strong> 4,000,000 UZS + bonus</p>
+            <p><strong>Mas'uliyatlar:</strong> Mijozlar bilan ishlash, mahsulotlar savdosini oshirish.</p>
+            <p><strong>Talablar:</strong> Sotuv sohasida tajriba, muloqot qilish qobiliyati, jamoada ishlash qobiliyati.</p>
+          </div>
+          <div class="footer">
+            <a href="https://t.me/Garant_Anketa_bot" target="_blank" class="btn btn-primary btn-block">Ariza topshirish</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yana bir kartochka -->
+      <div class="col-lg-4 py-3 wow zoomIn">
+        <div class="card-pricing">
+          <div class="header">
+            <div class="pricing-type">Marketing Mutaxassisi</div>
+          </div>
+          <div class="body">
+            <p><strong>Ish joyi:</strong> Toshkent, Mirobod</p>
+            <p><strong>Maosh:</strong> 5,000,000 UZS + bonus</p>
+            <p><strong>Mas'uliyatlar:</strong> Marketing strategiyasini ishlab chiqish, ijtimoiy media kampaniyalarini olib borish.</p>
+            <p><strong>Talablar:</strong> Marketingda tajriba, ijodkorlik, tahlil qilish qobiliyati.</p>
+          </div>
+          <div class="footer">
+            <a href="https://t.me/Garant_Anketa_bot" target="_blank" class="btn btn-primary btn-block">Ariza topshirish</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yana bir kartochka -->
+      <div class="col-lg-4 py-3 wow zoomIn">
+        <div class="card-pricing">
+          <div class="header">
+            <div class="pricing-type">Xaydovchi (Labo)</div>
+          </div>
+          <div class="body">
+            <p><strong>Ish joyi:</strong> Barcha filiallarimiz uchun </p>
+            <p><strong>Maosh:</strong> 5,000,000 UZS + bonus</p>
+            <p><strong>Mas'uliyatlar:</strong> Mijozlarga vaqtida va xafsiz mahsulotlarini yetkazib berish.</p>
+            <p><strong>Talablar:</strong> Shaxsiy Labo avtomabili bo'lishi, haydovchilik tajribasi, hududlarni yaxshi bilishi.</p>
+          </div>
+          <div class="footer">
+            <a href="https://t.me/Garant_Anketa_bot" target="_blank" class="btn btn-primary btn-block">Ariza topshirish</a>
+          </div>
+        </div>
+      </div>
+
+            <!-- Yana bir kartochka -->
+            <div class="col-lg-4 py-3 wow zoomIn">
+              <div class="card-pricing">
+                <div class="header">
+                  <div class="pricing-type">Operator</div>
+                </div>
+                <div class="body">
+                  <p><strong>Ish joyi:</strong> Farg'ona shaxar </p>
+                  <p><strong>Maosh:</strong> 3,000,000 UZS + bonus</p>
+                  <p><strong>Mas'uliyatlar:</strong> Xush muomilalik, ishga ma'sulyat bilan yondashish.</p>
+                  <p><strong>Talablar:</strong> 18 yoshdan 30 yoshgacha, ish joyga yaqin atrofda yashashi.</p>
+                </div>
+                <div class="footer">
+                  <a href="https://t.me/Garant_Anketa_bot" target="_blank" class="btn btn-primary btn-block">Ariza topshirish</a>
+                </div>
+              </div>
+            </div>
+
+      <!-- Boshqa lavozimlar ham shu tarzda qo'shilishi mumkin -->
+    </div>
+  </div>
+</div>
+
+<!-- Biz haqimizda -->
+    <div class="page-section" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 py-3 wow fadeInUp">
+            <span class="subhead">Biz haqimizda</span>
+            <h2 class="title-section">Nega Bizni Tanlashadi?</h2>
+            <div class="divider"></div>
+  
+            <p>Garant Savdo Markazining xizmatlari mijozlarga qulaylik, ishonchlilik va moslashuvchanlikni ta'minlaydi. Biz mijozlarimizga eng yaxshi xizmatlarni taqdim etish uchun doimiy ravishda o'z xizmatlarimizni yaxshilab boramiz. Sizning mamnunligingiz biz uchun muhim!</p>
+            <p>Bizning tajribali maslahatchilarimiz sizga eng mos mahsulot va to'lov rejasini tanlashda yordam beradi. Ular sizning talab va imkoniyatlaringizni hisobga olib, eng yaxshi takliflarni taqdim etadilar.</p>
+            <!-- <a href="about.html" class="btn btn-primary mt-3">Read More</a> -->
+          </div>
+          <div class="col-lg-6 py-3 wow fadeInRight">
+            <div class="img-fluid py-3 text-center">
+              <img src="../assets/img/about_frame.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div> <!-- .container -->
+    </div> <!-- .page-section -->
+
+ <!-- Factlar -->
+    <div class="page-section banner-seo-check">
+      <div class="wrap bg-image" style="background-image: url(../assets/img/bg_pattern.svg);">
+        <div class="container text-center">
+          <div class="row justify-content-center wow fadeInUp">
+            <div class="col-lg-8">
+  
+              <h2 class="mb-4">Bizning kompaniyamiz: raqamlar va faktlar!</h2>
+              
+              <div class="mt-4 d-flex justify-content-between align-items-center">
+                <div>
+                  <h1>15</h1>
+                  <p>Yillik tajiriba</p>
+                </div>
+  
+                <div>
+                  <h1>+23K</h1>
+                  <p>Mijozlar</p>
+                </div>
+                
+                <div>
+                  <h1>32</h1>
+                  <p>Filiallarimiz</p>
+                </div>
+  
+                <div>
+                  <h1>347</h1>
+                  <p>Mutaxassislar</p>
+                </div>
+  
+              </div>
+              
+            </div>
+          </div>
+        </div> <!-- .container -->
+      </div> <!-- .wrap -->
+    </div> <!-- .page-section -->
+  
+
+  <div class="page-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="../assets/img/services/service-2.svg" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">Keng Tanlov Imkoniyati</h5>
+              <p>Bizning markazimizda siz turli toifadagi mahsulotlarni – elektronika, maishiy texnika, mebel va boshqalarni topishingiz mumkin. Keng tanlovimiz sizga o'zingizga kerakli va mos mahsulotni topishda yordam beradi.</p>
+              <!-- <a href="service.html" class="btn btn-primary">Read More</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="../assets/img/services/service-1.svg" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">Mijozlarni Qo'llab-quvvatlash</h5>
+              <p>Har qanday savol yoki muammolar bo'lsa, mijozlarni qo'llab-quvvatlash jamoamiz sizga yordam berishga tayyor. Biz telefon, elektron pochta yoki ijtimoiy tarmoqlar orqali mijozlarimiz bilan aloqa o'rnatamiz va ularni har qanday bosqichda qo'llab-quvvatlaymiz.</p>
+              <!-- <a href="service.html" class="btn btn-primary">Read More</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="../assets/img/services/service-3.svg" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">Bepul Yetkazib Berish</h5>
+              <p>Sizning kridit asosida xarid qilgan mahsulotingizni uyingizga bepul yetkazib berish xizmatini taklif qilamiz. Shunday qilib, siz mahsulotni sotib olish jarayonidan keyin ham o'zingizni qulay his qilishingiz mumkin.</p>
+              <!-- <a href="service.html" class="btn btn-primary">Read More</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .container -->
+  </div> <!-- .page-section -->
+
+  <div class="page-section bg-light">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="subhead">Filiallarimiz</div>
+        <h2 class="title-section">Hozirda O'zbekiston bo'yicha 30 dan ortiq filiallarimiz mavjud!</h2>
+        <div class="divider mx-auto"></div>
+      </div>
+      <div id="map"></div> <!-- Xarita qo'yiladigan konteyner -->
+    </div> <!-- .container -->
+  </div> <!-- .page-section -->
+
+  <!-- .page-section -->
+
+  <!-- Bizning Kredit Shartlari bo'limi -->
+<div class="page-section banner-info">
+  <div class="wrap bg-image" style="background-image: url(../assets/img/bg_pattern.svg);">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 py-3 pr-lg-5 wow fadeInUp">
+          <h2 class="title-section">Orzuyingizdagi Mahsulotga Egasi Bo'ling!</h2>
+          <div class="divider"></div>
+          <p>Garant Savdo markazi sizga o'zingiz xohlagan mahsulotlarni 12 oygacha bo'lgan muddatda qulay shartlarda kreditga xarid qilish imkonini beradi. Bizning xizmatlarimiz orqali siz uy jihozlari, maishiy texnika, elektronika va boshqa mahsulotlarga ega bo'lishingiz mumkin.</p>
+          
+          <ul class="theme-list theme-list-light text-white">
+            <li>
+              <div class="h5">Qulay to'lov shartlari</div>
+              <p>Har bir mijoz uchun mos keladigan, moslashuvchan to'lov tizimi.</p>
+            </li>
+            <li>
+              <div class="h5">Tez va oson jarayon</div>
+              <p>Faqatgina pasport bilan murojaat qilish kifoya.</p>
+            </li>
+            <li>
+              <div class="h5">0% boshlang'ich to'lov</div>
+              <p>Dastlabki to'lovsiz xarid imkoniyati.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 py-3 wow fadeInRight">
+          <div class="img-fluid text-center">
+            <img src="../assets/img/banner_image_2.svg" alt="Bizning Kredit Shartlari" class="w-100">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- .wrap -->
+</div> <!-- .page-section -->
+
+  <footer class="page-footer bg-image" style="background-image: url(../assets/img/world_pattern.svg);">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-4 py-3">
+          <h3>Biz sizni kutamiz.</h3>
+          <p>Toshkent, Farg’ona, Andijon, Namangan, Samarqand, Qashqadaryo, Buxoro, Surxondaryo.</p>
+
+          <div class="social-media-button">
+            <a target="_blank" href="#"><span class="mai-logo-facebook-f"></span></a>
+            <a target="_blank" href="https://t.me/garantsavdo_chat"><span class="mai-logo-telegram"></span></a>
+            <a target="_blank" href="https://www.google.com/search?q=garant+kredit&oq=garant+&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIHCAEQABiABDIGCAIQRRhBMgYIAxBFGDwyBggEEEUYPDIGCAUQRRg8MgYIBhBFGD0yBggHEEUYQdIBCDQzNzhqMGo0qAIIsAIB&sourceid=chrome&ie=UTF-8"><span class="mai-logo-google-plus-g"></span></a>
+            <a target="_blank" href="https://www.instagram.com/garant_savdo_markazi/"><span class="mai-logo-instagram"></span></a>
+            <a target="_blank" href="https://www.youtube.com/@garantsavdo5234"><span class="mai-logo-youtube"></span></a>
+          </div>
+        </div>
+        <!-- <div class="col-lg-3 py-3">
+          <h5>Company</h5>
+          <ul class="footer-menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Help & Support</a></li>
+          </ul>
+        </div> -->
+        <div class="col-lg-4 py-3">
+          <h5>Aloqa</h5>
+          <p>Farg'ona shaxar, Qomus kuchasi, 32A-uy</p>
+          <a href="#" class="footer-link">+998 55 802 55 50</a>
+          <a href="#" class="footer-link">garantkridet@info.com</a>
+        </div>
+        <div class="col-lg-4 py-3">
+          <h5>Xabarnoma</h5>
+          <p>Pochtangizda yangilanishlar, yangiliklar yoki xabarlarni oling..</p>
+          <form action="#">
+            <input type="text" class="form-control" placeholder="email..">
+            <button type="submit" class="btn btn-success btn-block mt-2">Yuborish</button>
+          </form>
+        </div>
+      </div>
+
+      <p class="text-center" id="copyright">Copyright &copy; 2024. Create and develop by <a href="#">Garant Soft</a></p>
+    </div>
+  </footer>
+
+<script src="../assets/js/jquery-3.5.1.min.js"></script>
+
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="../assets/js/google-maps.js"></script>
+
+<script src="../assets/vendor/wow/wow.min.js"></script>
+
+<script src="../assets/js/theme.js"></script>
+
+<script>
+  // Xarita markazini belgilash (masalan, Toshkent)
+  const map = L.map('map').setView([41.2995, 69.2401], 12);
+
+  // OSM kafellarini yuklash
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 7,
+  }).addTo(map);
+
+  // Nuqtalarni xaritaga qo'shish
+  const points = [
+    { lat: 41.3123, lng: 69.2793, title: 'Nuqta 1' }, // Masalan, Toshkent markazidagi nuqta
+    { lat: 41.3275, lng: 69.2817, title: 'Nuqta 2' }, // Ikkinchi nuqta
+
+    { lat: 40.384175021784436, lng: 71.78689628843186, title: "Farg'ona" },
+    { lat: 39.651115510666784, lng: 66.94930324530769, title: "Samarqand"},
+    { lat: 38.86103732316654,  lng: 65.78567841140888, title: "Qarshi" }, 
+    { lat: 39.78634923263708,  lng: 64.4304462254133, title: "Buxoro" },
+    { lat: 41.00575294412632,  lng: 71.64235899255607, title: "Namangan" },
+    { lat: 40.78613188551329,  lng:72.3650649847961, title: "Andijon" },
+    { lat: 41.312696815800365, lng: 69.25172632115077, title: "Toshkent" },
+    { lat: 40.49331064393552,  lng: 68.77284042245384, title: "Guliston" },
+    { lat: 40.11944051066988,  lng: 67.8769166564373, title: "Jizzax" },
+    { lat: 37.26113630838135,  lng: 67.3109957256695, title: "Termiz" }
+  ];
+
+  points.forEach(point => {
+    L.marker([point.lat, point.lng])
+      .addTo(map)
+      .bindPopup(point.title) // Pop-up (info oynasi) sarlavhasi
+      .openPopup();
+  });
+</script>
+  
+</body>
+</html>
